@@ -44,7 +44,7 @@ class rocket_connector(object):
         self.browser.get(self.BASE_URL)
         self.browser.maximize_window()
         
-    def find_by_username(self, username):
+    def find_username(self, username):
         """find_user_by_name ()
         locate existing contact by username or number
         Args:
@@ -67,11 +67,7 @@ class rocket_connector(object):
             
             
     def send_message(self, message):
-        """send_message ()
-        Sends a message to a target user
-        Args:
-            message ([type]): [description]
-        """
+
         try:
             inp_xpath = '/html/body/div[1]/div[2]/div[2]/div/main/div/div/div/div/div/section/div/div/footer/div/label/textarea'
             input_box = self.wait.until(
@@ -80,6 +76,4 @@ class rocket_connector(object):
         except (NoSuchElementException, Exception) as bug:
             print(bug)
 
-        finally:
-            print("send_message() finished running ")
             
