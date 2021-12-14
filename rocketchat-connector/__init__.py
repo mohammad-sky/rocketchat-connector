@@ -66,3 +66,20 @@ class rocket_connector(object):
             print(error)
             
             
+    def send_message(self, message):
+        """send_message ()
+        Sends a message to a target user
+        Args:
+            message ([type]): [description]
+        """
+        try:
+            inp_xpath = '/html/body/div[1]/div[2]/div[2]/div/main/div/div/div/div/div/section/div/div/footer/div/label/textarea'
+            input_box = self.wait.until(
+                EC.presence_of_element_located((By.XPATH, inp_xpath)))
+            input_box.send_keys(message + Keys.ENTER)
+        except (NoSuchElementException, Exception) as bug:
+            print(bug)
+
+        finally:
+            print("send_message() finished running ")
+            
