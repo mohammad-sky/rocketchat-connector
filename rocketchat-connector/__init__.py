@@ -43,3 +43,26 @@ class rocket_connector(object):
     def login(self):
         self.browser.get(self.BASE_URL)
         self.browser.maximize_window()
+        
+    def find_by_username(self, username):
+        """find_user_by_name ()
+        locate existing contact by username or number
+        Args:
+            username ([type]): [description]
+        """
+        try:
+            Find_the_search_mark = self.wait.until(EC.presence_of_element_located(
+                (By.XPATH, '/html/body/div[1]/div[2]/aside/div[1]/div/div/div[2]/button[2]/i')))
+            Find_the_search_mark.click()
+            
+            
+            search_box = self.wait.until(EC.presence_of_element_located(
+                (By.XPATH, '/html/body/div[1]/div[2]/aside/div[1]/div/div/div[2]/div/div[1]/div/label/input')))
+            search_box.clear()
+            search_box.send_keys(username)
+            search_box.send_keys(Keys.ENTER)
+        except Exception as bug:
+            error = f'Exception raised while finding user {username}\n{bug}'
+            print(error)
+            
+            
