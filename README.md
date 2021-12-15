@@ -16,7 +16,7 @@ You first need to clone or download the repo to your local directory and then mo
 ```bash
 git clone https://github.com/sepehrmizani/rocketchat-connector
 cd rocketchat-connector
-
+```
 
 ### Setting up Selenium
 
