@@ -28,7 +28,19 @@ Underneath rocketchat-connector is **Selenium** which is one does all the automa
 
 Here an Example on how to find user
 ```python
->>> from alright import WhatsApp
->>> messenger = WhatsApp()
+>>> from rocketchat-connector import rocket_connector
+>>> messenger = rocket_connector()
 >>> messenger.find_by_username('name or group name')
+```
+
+
+Here an Example on how to send messages
+
+```python
+>>> from rocketchat-connector import rocket_connector
+>>> messenger = rocket_connector()
+>>> messenger.find_user('2557xxxxxz')
+>>> messages = ['Morning my love', 'I wish you a good night!']
+>>> for message in messages:  
+        messenger.send_message(message)    
 ```
