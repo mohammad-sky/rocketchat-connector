@@ -75,5 +75,11 @@ class rocket_connector(object):
             input_box.send_keys(message + Keys.ENTER)
         except (NoSuchElementException, Exception) as bug:
             print(bug)
+            
+    def find_attachment(self):
+        clipButton = self.wait.until(EC.presence_of_element_located(
+            (By.XPATH,
+             '/html/body/div[1]/div[2]/div[2]/div/main/div/div/div/div/div/section/div/div/footer/div/label/span[2]')))
+        clipButton.click()
 
             
