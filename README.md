@@ -28,6 +28,8 @@ Underneath rocketchat-connector is **Selenium** which is one does all the automa
 - [Send Messages](#sending-messages)
 - [change status](#change-status)
 - [Logout ](#Logout )
+
+
 To log in, you must log in to the chat rocket the first time it enters Google, so that from now on the chat rocket can be opened without the need to log in.
  
 
