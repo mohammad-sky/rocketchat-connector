@@ -54,3 +54,9 @@ Here an Example on how to send messages
 >>> messenger.send_message("message") 
 ```
 
+Here an Example on how to logout
+```python
+>>> from rocketchat-connector import rocket_connector
+>>> messenger = rocket_connector()
+>>> messenger.logout()
+```
