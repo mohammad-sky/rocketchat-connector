@@ -44,9 +44,10 @@ Here an Example on how to send messages
 >>> messenger.find_user('2557xxxxxz')
 >>> messages = ['Morning my love', 'I wish you a good night!']
 >>> for message in messages:  
-        messenger.send_message(message)    
+        messenger.send_message(message) 
+ ```
         
-```pyhton
+```python
 >>> from rocketchat-connector import rocket_connector
 >>> messenger = rocket_connector()
 >>> messenger.find_user('2557xxxxxz')
