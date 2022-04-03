@@ -26,10 +26,10 @@ Underneath rocketchat-connector is **Selenium** which is one does all the automa
 - [Login ](#Login)
 - [find user](#find-user)
 - [Send Messages](#sending-messages)
+- [change status](#change-status)
 - [Logout ](#Logout )
-
 To log in, you must log in to the chat rocket the first time it enters Google, so that from now on the chat rocket can be opened without the need to log in.
-
+ 
 
 In the next version, you can login to the code in RocketChat and you do not need to log in to RocketChat manually.
 
