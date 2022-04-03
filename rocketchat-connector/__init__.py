@@ -43,6 +43,14 @@ class rocket_connector(object):
     def login(self):
         self.browser.get(self.BASE_URL)
         self.browser.maximize_window()
+    def logout(self):
+        Find_the_profilepage = self.wait.until(EC.presence_of_element_located(
+            (By.XPATH, '//*[@id="rocket-chat"]/aside/div[1]/div/div/div[1]')))
+        Find_the_profilepage.click() 
+        logout = self.wait.until(EC.presence_of_element_located(
+            (By.XPATH, '/html/body/div[3]/div/div/div/div[3]/li[2]/div/div[2]')))
+        logout.click()       
+
         
     def find_username(self, username):
         """find_user_by_name ()
