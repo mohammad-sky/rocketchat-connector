@@ -51,6 +51,27 @@ class rocket_connector(object):
             (By.XPATH, '/html/body/div[3]/div/div/div/div[3]/li[2]/div/div[2]')))
         logout.click()       
 
+
+    def change_status(self,status):
+        Find_the_profilepage = self.wait.until(EC.presence_of_element_located(
+            (By.XPATH, '//*[@id="rocket-chat"]/aside/div[1]/div/div/div[1]')))
+        Find_the_profilepage.click()
+        
+        if status=="online":
+            set_status = self.wait.until(EC.presence_of_element_located(
+                    (By.XPATH, '/html/body/div[3]/div/div/div/div[2]/li[1]')))
+            set_status.click() 
+        elif status =="away":         
+            set_status = self.wait.until(EC.presence_of_element_located(
+                    (By.XPATH, '/html/body/div[3]/div/div/div/div[2]/li[2]')))
+            set_status.click() 
+        elif status =="busy":         
+            set_status = self.wait.until(EC.presence_of_element_located(
+                    (By.XPATH, '/html/body/div[3]/div/div/div/div[2]/li[3]')))
+            set_status.click() 
+            
+            
+            
         
     def find_username(self, username):
         """find_user_by_name ()
