@@ -7,3 +7,5 @@ messenger.send_message("text")
 
 messenger.change_status("away")
 
+messenger.logout()
+
