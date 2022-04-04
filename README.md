@@ -37,6 +37,8 @@ In the next version, you can login to the code in RocketChat and you do not need
 
 
 Here an Example on how to find user
+You can also find groups this way
+
 ```python
 >>> from rocketchat-connector import rocket_connector
 >>> messenger = rocket_connector()
