@@ -83,4 +83,5 @@ Here an Example on how to logout
 ```
 # Contributions
 **rocketchat-connector** is an open-source package under **MIT** license, so contributions are warmly welcome whether that be a code , docs or typo just fork it.
+when contributing to code please make an issue for that before making your changes so that we can have a discussion before implementation.
 
