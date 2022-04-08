@@ -81,3 +81,5 @@ Here an Example on how to logout
 >>> messenger = rocket_connector()
 >>> messenger.logout()
 ```
+# Contributions
+
