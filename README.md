@@ -82,4 +82,5 @@ Here an Example on how to logout
 >>> messenger.logout()
 ```
 # Contributions
+**rocketchat-connector** is an open-source package under **MIT** license, so contributions are warmly welcome whether that be a code , docs or typo just fork it.
 
