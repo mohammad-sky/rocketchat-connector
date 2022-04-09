@@ -30,7 +30,7 @@ Underneath rocketchat-connector is **Selenium** which is one does all the automa
 - [Logout ](#Logout )
 
 
-To log in, you must log in to the chat rocket the first time it enters Google, so that from now on the chat rocket can be opened without the need to log in.
+To log in, you must log in to the rocket chat  the first time it enters Google, so that from now on the chat rocket can be opened without the need to log in.
  
 
 In the next version, you can login to the code in RocketChat and you do not need to log in to RocketChat manually.
