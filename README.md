@@ -86,3 +86,8 @@ Here an Example on how to logout
 
 when contributing to code please make an issue for that before making your changes so that we can have a discussion before implementation.
 
+
+# Give it a star
+
+If this program was useful to you, please give this program a star so that others can use this program
+
